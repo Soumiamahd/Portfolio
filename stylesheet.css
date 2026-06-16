@@ -157,9 +157,15 @@ img {
    padding-left: 40px;
 }
 
-.logo-img {
+.logo-desktop {
   height: 40px;
   width: auto;
+}
+
+.logo-mobile {
+  height: 40px;
+  width: auto;
+  display: none;
 }
 
 .header-nav-ul {
@@ -287,6 +293,11 @@ img {
    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
 }
 
+.cta-button:active {
+   transform: scale(0.97);
+   filter: brightness(0.6);
+}
+
 .cta-button-secondary {
    display: inline-block;
    padding: 18px 45px;
@@ -307,6 +318,11 @@ img {
    color: #111;
    transform: translateY(-3px);
 
+}
+
+.cta-button-secondary:active {
+   transform: scale(0.97);
+   filter: brightness(0.6);
 }
 
 
@@ -383,6 +399,10 @@ img {
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
 }
 
+.newsletter-form button:active {
+   transform: scale(0.97);
+   filter: brightness(0.6);
+}
 
 /* ============================================
    ABOUT SECTION
@@ -927,6 +947,12 @@ img {
    color: var(--text-dark);
 }
 
+.submit-btn:active {
+   transform: scale(0.97);
+   filter: brightness(0.6);
+}
+
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -1013,6 +1039,11 @@ img {
 
 .social-link:hover i {
    color: var(--text-dark);
+}
+
+.social-link:active {
+   transform: scale(0.97);
+   filter: brightness(0.6);
 }
 
 .cv-download {
@@ -1105,6 +1136,10 @@ img {
    .menu-toggle {
       display: none;
    }
+
+   .logo-mobile {
+   display: none;
+   }
 }
 
 @media (max-width: 1024px) {
@@ -1159,8 +1194,6 @@ img {
       text-align: center;
    }
 
-
-   
    .contact-form {
       grid-row: 1;
       width: 100%;
@@ -1169,6 +1202,9 @@ img {
       
    }
 
+   .logo-mobile {
+   display: none;
+   }
    
 }
 
@@ -1355,6 +1391,14 @@ img {
    
    .footer-links a:hover {
       padding-left: 0;
+   }
+
+   .logo-desktop {
+      display: none;
+   }
+
+   .logo-mobile {
+      display: block;
    }
 }
 
